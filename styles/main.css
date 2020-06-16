@@ -4,17 +4,62 @@
   font-family: "Helvetica", sans-serif;
   font-weight: 400;
   text-decoration: none;
+  background-color: #adcfff;
+}
+
+a {
+  color: #000;
 }
 
 nav {
-  background-color: red;
+  border-bottom: 1px solid #000;
 }
 nav ul {
   display: flex;
   justify-content: flex-end;
 }
 nav ul li {
+  margin: 0.5rem 0.5rem 0.5rem 0;
   list-style: none;
+}
+
+div.hero {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-top: 4rem;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid #000;
+}
+
+section.section {
+  padding: 1rem 0.75rem;
+  border-bottom: 1px solid #000;
+}
+section.section .heading {
+  margin-bottom: 0.5rem;
+  letter-spacing: 3px;
+}
+
+section.about,
+section.contact {
+  text-align: right;
+  padding-left: 2.5rem;
+}
+
+section.contact {
+  border-bottom: transparent;
+}
+
+div.projects-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+div.projects-wrapper article.project {
+  margin: 0.5rem;
+  width: 44%;
+  height: 100px;
+  border: 1px solid #000;
 }
 
 /*# sourceMappingURL=main.css.map */

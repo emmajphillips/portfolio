@@ -1,18 +1,71 @@
+// ? ---------- Global ---------- //
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Helvetica", sans-serif;
   font-weight: 400;
   text-decoration: none;
+  background-color: #adcfff;
 }
 
+a {
+  color: #000;
+}
+
+// ? ---------- Header ---------- //
+// * Navbar
 nav {
-  background-color: red;
+  border-bottom: 1px solid #000;
   ul {
     display: flex;
     justify-content: flex-end;
     li {
+      margin: 0.5rem 0.5rem 0.5rem 0;
       list-style: none;
     }
+  }
+}
+
+// * Hero
+div.hero {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-top: 4rem;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid #000;
+}
+
+// ? ---------- Sections ---------- //
+// * General
+section.section {
+  padding: 1rem 0.75rem;
+  border-bottom: 1px solid #000;
+  .heading {
+    margin-bottom: 0.5rem;
+    letter-spacing: 3px;
+  }
+}
+// * About and contact sections
+section.about,
+section.contact {
+  text-align: right;
+  padding-left: 2.5rem;
+}
+
+section.contact {
+  border-bottom: transparent;
+}
+
+// * Projects section
+div.projects-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  article.project {
+    margin: 0.5rem;
+    width: 44%;
+    height: 100px;
+    border: 1px solid #000;
   }
 }
