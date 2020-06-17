@@ -8,7 +8,7 @@
   nav > ul {
     max-width: 25em;
     position: relative;
-    left: calc(100% - (25em + 2em));
+    left: calc(100% - (25em + 8% - 20px));
   }
 
   // * Hero
