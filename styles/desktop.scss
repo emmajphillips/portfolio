@@ -15,10 +15,28 @@
   div.hero {
     h1 {
       max-width: 25rem;
-      margin: 0 auto 0 25%;
+      margin: 0 auto 0 8%;
     }
   }
   // * All sections
+  section.about,
+  section.contact {
+    .heading {
+      margin: 0 8% 0.5rem auto;
+    }
+    p {
+      margin: 0 8% 0 auto;
+    }
+  }
 
   // * Projects section
+  section.projects {
+    .heading {
+      margin: 0 auto 0.5rem 8%;
+    }
+    div.projects-wrapper {
+      max-width: 44em;
+      margin: 0 auto 0 5%;
+    }
+  }
 }

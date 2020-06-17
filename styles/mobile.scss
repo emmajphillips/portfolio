@@ -31,6 +31,7 @@ section.section {
   .heading {
     font-size: 1.75em;
     margin-bottom: 0.5rem;
+    padding-left: 0.25em;
     letter-spacing: 3px;
   }
 }
@@ -54,12 +55,29 @@ div.projects-wrapper {
   article.project {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
     margin: 0.5rem;
-    width: 96%;
+    width: 100%;
     height: 230px;
     border: 1px solid #000;
+    img {
+      position: absolute;
+      top: 0;
+      margin: auto;
+    }
+    div {
+      z-index: 10;
+      padding: 0.5rem;
+      background-color: #faf8ea;
+      border-top: 1px solid #000;
+      a,
+      h3,
+      p {
+        background-color: inherit;
+      }
+    }
   }
 }
 
