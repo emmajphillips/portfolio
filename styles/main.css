@@ -138,6 +138,11 @@ section.contact .heading {
   section.about p,
 section.contact p {
     margin: 0 8% 0 auto;
+    font-size: 1.25em;
+  }
+  section.about p:last-child,
+section.contact p:last-child {
+    margin-bottom: 1rem;
   }
 
   section.projects .heading {
