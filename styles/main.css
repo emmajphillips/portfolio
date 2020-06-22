@@ -28,14 +28,20 @@ nav ul li {
 }
 
 div.hero {
+  height: calc(100vh - 43px);
   text-transform: uppercase;
+  text-align: bottom;
   font-size: 2em;
-  margin-top: 4em;
-  padding: 0.5em;
+  padding: 0.5em 0.5em 0;
   border-bottom: 1px solid #000;
+}
+div.hero h1:first-child {
+  margin-top: 50%;
 }
 
 section.section {
+  min-height: calc(100vh - 43px);
+  height: 100%;
   padding: 1rem 0.75rem;
   border-bottom: 1px solid #000;
   font-size: 18px;
@@ -126,6 +132,9 @@ section.contact {
     left: calc(100% - (25em + 8% - 20px));
   }
 
+  div.hero {
+    height: calc(100vh - 43px);
+  }
   div.hero h1 {
     max-width: 25rem;
     margin: 0 auto 0 8%;

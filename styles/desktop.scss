@@ -13,6 +13,7 @@
 
   // * Hero
   div.hero {
+    height: calc(100vh - 43px);
     h1 {
       max-width: 25rem;
       margin: 0 auto 0 8%;
