@@ -4,7 +4,7 @@
   font-family: "Helvetica", sans-serif;
   font-weight: 400;
   text-decoration: none;
-  background-color: #b6ddff;
+  background-color: #daedfd;
 }
 
 a {
@@ -36,7 +36,8 @@ div.hero {
   border-bottom: 1px solid #000;
 }
 div.hero h1:first-child {
-  margin-top: 50%;
+  margin-top: 60vh;
+  max-width: 7em;
 }
 
 section.section {
@@ -137,7 +138,7 @@ section.contact {
   }
   div.hero h1 {
     max-width: 25rem;
-    margin: 0 auto 0 8%;
+    margin: 0 auto 1rem 8%;
   }
 
   section.about .heading,
