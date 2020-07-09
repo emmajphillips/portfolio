@@ -48,11 +48,33 @@ section.contact {
   text-align: right;
   padding-left: 2.5rem;
 }
-
 // * About section
 section.about > p:nth-child(2) {
   padding-bottom: 1rem;
 }
+
+section.about > h2:nth-child(4){
+  margin-top: 1rem;
+}
+
+  div.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 25em;
+    margin: 0 0 0 auto;
+    div.tech-skill {
+      text-align: center;
+      width: 27%;
+      margin: 20px 0 10px 20px;
+      i {
+        font-size: 2.5em;
+      }
+      p {
+        margin-top: 8px;
+      }
+    }
+  }
 
 // * Projects section
 div.projects-wrapper {

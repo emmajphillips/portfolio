@@ -34,6 +34,17 @@
     }
   }
 
+  div.technologies {
+    margin: 0 8% 0 auto;
+    max-width: 80%;
+    div.tech-skill {
+      width: 12%;
+    }
+    p {
+      margin: 0;
+    }
+  }
+
   // * Projects section
   section.projects {
     .heading {
