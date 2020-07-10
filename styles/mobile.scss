@@ -37,7 +37,7 @@ section.section {
   font-size: 18px;
   .heading {
     font-size: 1.75em;
-    margin-bottom: 1rem;
+    margin: 2rem 0 1rem;
     padding-left: 0.25em;
     letter-spacing: 3px;
   }
@@ -78,19 +78,44 @@ div.technologies {
 
 // * Projects section
 div.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
   border: 1px solid #000;
   width: 100%;
   div.project {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: justify;
+    width: 100%;
+    height: 40vh;
+    padding: 2rem;
+    border-bottom: 1px solid #000;
+    &:nth-child(4) {
+      border-bottom: none;
+    }
     h3 {
-      font-size: 22px;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    .links > a {
+      padding: 3px;
+      &:first-child::after {
+      content: "  //";
+    }
+  }
+    p {
+      text-align: justify;
+      width: 80%;
+      transition: 1s ease-in;
+    }
+    button {
+      margin: 0.5em;
+      padding: 10px;
     }
   }
 }
-
 // * Contact section
 section.contact {
   border-bottom: transparent;

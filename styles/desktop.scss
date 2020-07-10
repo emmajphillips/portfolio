@@ -51,8 +51,18 @@
       margin: 0 auto 0.5rem 8%;
     }
     div.projects-wrapper {
-      max-width: 44em;
+      width: 90%;
       margin: 0 auto 0 5%;
+      div.project {
+        max-width: calc(26.2% - 1px);
+        &:nth-child(2), &:nth-child(4) {
+          border-right: 1px solid #000;
+        }
+        &:nth-child(3) {
+          border-right: none;
+          border-bottom: 1px solid #000 !important;
+        }
+      }
     }
   }
 }

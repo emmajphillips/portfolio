@@ -3,25 +3,25 @@ function init() {
   const projects = [
     {
       name: 'Tiger King: Murder, Mayhem and Minesweeper',
-      description: 'Individual project across one week, tasked with building a Tiger King-themed Minesweeper using HTML, CSS and vanillaJS',
+      description: 'Tiger King-themed game of Minesweeper using HTML, CSS and vanillaJS',
       link: 'https://emmajphillips.github.io/sei-project-one/',
       readme: 'https://github.com/emmajphillips/sei-project-one'
     },
     {
       name: 'What do you meme?',
-      description: '48-hour hackathon to create a GIF generator using the GIPHY API using React, SASS and Bulma. Completed through paired programming',
+      description: '48-hour hackathon to create a GIF generator using the GIPHY API using React, SASS and Bulma',
       link: 'https://what-do-you-meme.netlify.app/',
       readme: 'https://github.com/emmajphillips/sei-project-two'
     },
     {
       name: 'Accountable',
-      description: 'Group project to produce a full-stack application within one week using MongoDB, Node, Express.js and React. We assembled an expense sharing app similar to Splitwise that enabled more social interaction between users and allowed them to transfer funds directly between accounts. Oversaw user models in back-end and account pages in front-end application',
+      description: 'Group project to produce an \'improved Splitwise\' within one week using MongoDB, Node, Express.js and React',
       link: 'https://splitexpenses.herokuapp.com/',
       readme: 'https://github.com/emmajphillips/sei-group-project-3'
     },
     {
       name: 'JOBR',
-      description: 'Week-long group project utilising React, Django, Python and Semantic UI to create a job application tracker, implementing a kanban board through HTML5 Drag and Drop along with tasks, resources and contacts pages to better organise the job search. Handled CRUD actions for jobs and job status in database as well as front-end',
+      description: 'A job application tracker',
       link: 'https://jobeur.herokuapp.com',
       readme: 'https://github.com/emmajphillips/sei-project-4'
     }
@@ -33,10 +33,11 @@ function init() {
   projects.map(proj => {
     const project = document.createElement('div')
     const title = document.createElement('h3')
-    const description = document.createElement('p')
+    const links = document.createElement('div')
     const website = document.createElement('a')
     const readme = document.createElement('a')
     const button = document.createElement('button')
+    const description = document.createElement('p')
 
     title.textContent = proj.name
     description.textContent = proj.description
@@ -47,11 +48,14 @@ function init() {
     button.textContent = 'Read more'
     
     project.classList.add('project')
-    project.appendChild(title)
-    project.appendChild(website)
-    project.appendChild(readme)
-    project.appendChild(button)
     description.classList.add('hidden')
+    links.classList.add('links')
+
+    project.appendChild(title)
+    links.appendChild(website)
+    links.appendChild(readme)
+    project.appendChild(links)
+    project.appendChild(button)
     project.appendChild(description)
 
     projectsContainer.appendChild(project)

@@ -19,8 +19,17 @@
     }
   }
 
-  // * Projects section
-  div.projects-wrapper > article.project {
-    width: 42%;
+  div.project {
+    max-width: calc(41.96% - 1px);
+    // margin: auto;
+    &:nth-child(1), &:nth-child(3) {
+      border-right: 1px solid #000;
+    }
+    &:nth-child(3) {
+      border-bottom: none !important;
+    }
+    p {
+      margin: 0;
+    }
   }
 }
