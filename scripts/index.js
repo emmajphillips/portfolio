@@ -45,18 +45,22 @@ function init() {
     readme.href = proj.readme
     readme.textContent = 'ReadMe'
     button.textContent = 'Read more'
-
+    
     project.classList.add('project')
     project.appendChild(title)
     project.appendChild(website)
     project.appendChild(readme)
     project.appendChild(button)
+    description.classList.add('hidden')
     project.appendChild(description)
 
     projectsContainer.appendChild(project)
-    button.
+    button.addEventListener('click', () => {
+      description.classList.toggle('hidden')
+    })
   })
 
+  console.log(projectsContainer)
   
 }
 
