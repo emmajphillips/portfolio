@@ -27,44 +27,7 @@ function init() {
     }
   ]
 
-  const projectsContainer = document.querySelector('.projects-wrapper')
-
-
-  projects.map(proj => {
-    const project = document.createElement('div')
-    const title = document.createElement('h3')
-    const links = document.createElement('div')
-    const website = document.createElement('a')
-    const readme = document.createElement('a')
-    const button = document.createElement('button')
-    const description = document.createElement('p')
-
-    title.textContent = proj.name
-    description.textContent = proj.description
-    website.href = proj.link
-    website.textContent = 'Visit website'
-    readme.href = proj.readme
-    readme.textContent = 'ReadMe'
-    button.textContent = 'Read more'
-    
-    project.classList.add('project')
-    description.classList.add('hidden')
-    links.classList.add('links')
-
-    project.appendChild(title)
-    links.appendChild(website)
-    links.appendChild(readme)
-    project.appendChild(links)
-    project.appendChild(button)
-    project.appendChild(description)
-
-    projectsContainer.appendChild(project)
-    button.addEventListener('click', () => {
-      description.classList.toggle('hidden')
-    })
-  })
-
-  console.log(projectsContainer)
+  console.log('It works')
   
 }
 

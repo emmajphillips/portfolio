@@ -16,8 +16,4 @@ a {
   }
 }
 
-.hidden {
-  display: none;
-}
-
 @import "./mobile.scss", "./tablet.scss", "./desktop.scss";

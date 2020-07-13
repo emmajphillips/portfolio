@@ -14,10 +14,6 @@ a:hover {
   background-color: #faf8ea;
 }
 
-.hidden {
-  display: none;
-}
-
 nav {
   font-size: 20px;
   border-bottom: 1px solid #000;
@@ -91,44 +87,24 @@ div.technologies div.tech-skill p {
   margin-top: 8px;
 }
 
-div.projects-wrapper {
+article.project {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid #000;
-  width: 100%;
-}
-div.projects-wrapper div.project {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 40vh;
-  padding: 2rem;
-  border-bottom: 1px solid #000;
+  align-items: flex-start;
 }
-div.projects-wrapper div.project:nth-child(4) {
-  border-bottom: none;
+article.project img {
+  margin-top: 1em;
+  border: 1px solid #000;
 }
-div.projects-wrapper div.project h3 {
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 0.5rem;
+article.project div.content {
+  width: 95%;
 }
-div.projects-wrapper div.project .links > a {
-  padding: 3px;
+article.project div.content h3, article.project div.content p {
+  margin: 0.5em 0;
 }
-div.projects-wrapper div.project .links > a:first-child::after {
-  content: "  //";
-}
-div.projects-wrapper div.project p {
-  text-align: justify;
-  width: 80%;
-  transition: 1s ease-in;
-}
-div.projects-wrapper div.project button {
-  margin: 0.5em;
-  padding: 10px;
+article.project div.content a:nth-child(4)::before {
+  content: "//     ";
 }
 
 section.contact {
@@ -152,17 +128,18 @@ section.contact {
     margin: 0 0 0 auto;
   }
 
-  div.project {
-    max-width: calc(41.96% - 1px);
+  article.project > div.content {
+    flex-wrap: nowrap;
+    width: 48%;
+    margin-left: 1.5rem;
+    padding: 0.5em;
   }
-  div.project:nth-child(1), div.project:nth-child(3) {
-    border-right: 1px solid #000;
+  article.project > div.content p {
+    margin: 10px 0;
   }
-  div.project:nth-child(3) {
-    border-bottom: none !important;
-  }
-  div.project p {
-    margin: 0;
+
+  article:nth-child(4) {
+    margin-bottom: 2em;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -207,24 +184,6 @@ section.contact p:last-child {
   }
   div.technologies p {
     margin: 0;
-  }
-
-  section.projects .heading {
-    margin: 0 auto 0.5rem 8%;
-  }
-  section.projects div.projects-wrapper {
-    width: 90%;
-    margin: 0 auto 0 5%;
-  }
-  section.projects div.projects-wrapper div.project {
-    max-width: calc(26.2% - 1px);
-  }
-  section.projects div.projects-wrapper div.project:nth-child(2), section.projects div.projects-wrapper div.project:nth-child(4) {
-    border-right: 1px solid #000;
-  }
-  section.projects div.projects-wrapper div.project:nth-child(3) {
-    border-right: none;
-    border-bottom: 1px solid #000 !important;
   }
 }
 
