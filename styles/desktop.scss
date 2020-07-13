@@ -23,7 +23,7 @@
   section.about,
   section.contact {
     .heading {
-      margin: 0 8% 0.5rem auto;
+      margin: 2rem 8% 1rem auto;
     }
     p {
       margin: 0 8% 0 auto;
@@ -46,5 +46,10 @@
   }
 
   // * Projects section
-  
+  section.projects {
+    margin: 0 auto 0 8%;
+    article.project {
+      justify-content: flex-start;
+    }
+  }
 }

@@ -167,7 +167,7 @@ section.contact {
 
   section.about .heading,
 section.contact .heading {
-    margin: 0 8% 0.5rem auto;
+    margin: 2rem 8% 1rem auto;
   }
   section.about p,
 section.contact p {
@@ -188,6 +188,13 @@ section.contact p:last-child {
   }
   div.technologies p {
     margin: 0;
+  }
+
+  section.projects {
+    margin: 0 auto 0 8%;
+  }
+  section.projects article.project {
+    justify-content: flex-start;
   }
 }
 
