@@ -14,6 +14,10 @@ a:hover {
   background-color: #faf8ea;
 }
 
+strong {
+  font-weight: 600;
+}
+
 nav {
   font-size: 20px;
   border-bottom: 1px solid #000;
