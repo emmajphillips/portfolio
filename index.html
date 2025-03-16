@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width>, initial-scale=1.0">
   <title>Emma Phillips</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
-  <script src="./scripts/index.js"></script>
   <link rel="stylesheet" type="text/css" href="styles/main.css" />
+  <script src="./scripts/index.js"></script>
 </head>
 
 <body>
@@ -15,61 +15,83 @@
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
-        <li>//</li>
         <li><a href="#projects">Projects</a></li>
-        <li>//</li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="hero">
-      <h1 class="moveable-text">Emma Phillips</h1>
-    </div>
   </header>
   <main>
+    <div class="hero">
+      <h1>Emma Phillips</h1>
+    </div>
     <section id="about" class="about section">
       <h2 class="heading">About</h2>
-      <p>
-        Having worked in communications for leading, international arts brands, I hope to bring this experience into a
-        role as a software engineer - moving from working with the web team to being a part of the web team.
-      </p>
-
-      <p>
-        Through self-study, coding workshops and enrolling in a Software Engineering bootcamp, I have built a solid
-        foundation in both front-end and back-end technologies and languages. I wish to continue to strengthen these
-        skills and knowledge through a role as a developer in an agile and impactful workspace.
-      </p>
-      <h2 class="heading">Interests</h2>
-      <p><strong>Current events</strong> - Addicted to the BBC News app, New York Times’ newsletters and any current-affairs based podcast</p>
-      <br/>
-      <p><strong>Yoga</strong> - Have been practising for almost 10 years</p>
-      <br/>
-      <p><strong>Food</strong> - Love trying new foods and restaurants, regularly create (or at least attempt professional quality meals at home from scratch</p>
-      <h2 class="heading">Skills</h2>
+      <div class="summary">
+        <h3 class="heading">About me</h3>
+        <p>
+          Software engineer specialising in React, JavaScript, TypeScript
+          and web accessibility. I have built a solid foundation in both
+          frontend and backend technologies and languages through my current
+          role along with self-study, workshops and a software engineering
+          immersive. I wish to continue to grow as an engineer through a role
+          at an impactful workspace. Based in London, UK
+        </p>
+      </div>
+      <div class="interests">
+        <h3 class="heading">Interests</h3>
+        <p>
+          <span class="bold">Current events</span>
+          Addicted to the BBC News app, New York Times' newsletters and any
+          current-affairs based podcast
+        </p>
+        <p>
+          <span class="bold">Yoga</span>
+          Have been practising for over 10 years
+        </p>
+        <p>
+          <span class="bold">Food</span>
+          Love trying new foods and restaurants, regularly create (or at least attempt) professional level meals at home
+          from scratch
+        </p>
+      </div>
       <div class="skills">
-        <div class="technologies">
-          <div class="tech-skill">
-            <i class="devicon-html5-plain"></i>
-            <p>HTML</p>
-          </div>
-          <div class="tech-skill">
-            <i class="devicon-css3-plain"></i>
-            <p>CSS</p>
-          </div>
+        <h3 class="heading">Skills</h3>
+        <div class="skills-wrapper">
           <div class="tech-skill">
             <i class="devicon-javascript-plain"></i>
             <p>JavaScript</p>
+          </div>
+          <div class="tech-skill">
+            <i class="devicon-typescript-plain"></i>
+            <p>TypeScript</p>
           </div>
           <div class="tech-skill">
             <i class="devicon-react-original"></i>
             <p>React</p>
           </div>
           <div class="tech-skill">
-            <i class="devicon-sass-original"></i>
-            <p>SASS</p>
+            <i class="devicon-storybook-plain"></i>
+            <p>Storybook</p>
+          </div>
+          <div class="tech-skill">
+            <i class="devicon-gatsby-plain"></i>
+            <p>Gatsby</p>
           </div>
           <div class="tech-skill">
             <i class="devicon-nodejs-plain"></i>
             <p>Node.js</p>
+          </div>
+          <div class="tech-skill">
+            <i class="devicon-css3-plain"></i>
+            <p>CSS</p>
+          </div>
+          <div class="tech-skill">
+            <i class="devicon-sass-original"></i>
+            <p>SASS</p>
+          </div>
+          <div class="tech-skill">
+            <i class="devicon-html5-plain"></i>
+            <p>HTML</p>
           </div>
           <div class="tech-skill">
             <i class="devicon-express-original"></i>
@@ -124,62 +146,73 @@
             <p>Google</p>
           </div>
           <div class="tech-skill">
-            <i class="devicon-trello-plain"></i>
-            <p>Trello</p>
-          </div>
-          <div class="tech-skill">
             <i class="devicon-apple-original"></i>
             <p>Apple</p>
           </div>
         </div>
+      </div>
     </section>
     <section id="projects" class="projects section">
       <h2 class="heading">Projects</h2>
-      <div class="projects-wrapper">
-        <article class="project">
-          <img src="./assets/tiger-king-minesweeper.png" alt="Tiger King-themed minesweeper" />
-          <div class="content">
-            <h3>Tiger King: Murder, Mayhem and Minesweeper</h3>
-            <p>Tiger King-themed game of Minesweeper using HTML, CSS and vanillaJS.</p>
-            <a href="https://emmajphillips.github.io/sei-project-one/" target="_blank" rel="noopener noreferrer">Website</a>
-            <a href="https://github.com/emmajphillips/sei-project-one" target="_blank" rel="noopener noreferrer">ReadMe</a>
-          </div>
-        </article>
-        <article class="project">
-          <img src="./assets/what-do-you-meme.png" alt="GIF generator" />
-          <div class="content">
-            <h3>What do you meme? GIF generator</h3>
-            <p>48-hour hackathon to create a GIF generator using the GIPHY API using React, SASS and Bulma.</p>
-            <a href="https://what-do-you-meme.netlify.app/" target="_blank" rel="noopener noreferrer">Website</a>
-            <a href="https://github.com/emmajphillips/sei-project-two" target="_blank" rel="noopener noreferrer">ReadMe</a>
-          </div>
-        </article>
-        <article class="project">
-          <img src="./assets/accountable.png" alt="Accountable" />
-          <div class="content">
-            <h3>Accountable</h3>
-            <p>Group project to produce an 'improved Splitwise' within one week using MongoDB, Node, Express.js and React.</p>
-            <a href="https://splitexpenses.herokuapp.com/" target="_blank" rel="noopener noreferrer">Website</a>
-            <a href="https://github.com/emmajphillips/sei-group-project-3" target="_blank" rel="noopener noreferrer">ReadMe</a>
-          </div>
-        </article>
-        <article class="project">
-          <img src="./assets/jobr.png" alt="Job application tracker" />
-          <div class="content">
-            <h3>JOBR: Job application tracker</h3>
-            <p>Project utilising React, Django, Python and Semantic UI to create a job application tracker, implementing a kanban board through HTML5 Drag and Drop along with tasks, resources and contacts pages to better organise the job search.</p>
-            <a href="https://jobeur.herokuapp.com/jobs" target="_blank" rel="noopener noreferrer">Website</a>
-            <a href="https://github.com/emmajphillips/sei-project-4" target="_blank" rel="noopener noreferrer">ReadMe</a>
-          </div>
-        </article>
-      </div>
+      <article class="project">
+        <h3>Tiger King: Murder, Mayhem and Minesweeper</h3>
+        <img src="./assets/tiger-king-minesweeper.png" alt="" aria-describedby="tiger-king" />
+        <p id="tiger-king">Tiger King-themed game of Minesweeper using HTML, CSS and vanillaJS</p>
+        <div class="links">
+          <a href="https://emmajphillips.github.io/sei-project-one/" target="_blank" rel="noopener noreferrer">
+            Visit website
+          </a>
+          <a href="https://github.com/emmajphillips/sei-project-one" target="_blank"
+            rel="noopener noreferrer">Go to the ReadMe</a>
+        </div>
+      </article>
+      <article class="project">
+        <h3>What do you meme? GIF generator</h3>
+        <img src="./assets/what-do-you-meme.png" alt="" aria-describedby="meme" />
+        <p id="meme">
+          48-hour hackathon to create a GIF generator using the GIPHY API using React, SASS and Bulma
+        </p>
+        <div class="links">
+          <a href="https://what-do-you-meme.netlify.app/" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <a href="https://github.com/emmajphillips/sei-project-two" target="_blank"
+            rel="noopener noreferrer">Go to the ReadMe</a>
+        </div>
+      </article>
+      <article class="project">
+        <h3>Accountable</h3>
+        <img src="./assets/accountable.png" alt="Accountable" />
+        <p>
+          Group project to produce an 'improved Splitwise' within one week using MongoDB, Node, Express.js and React
+        </p>
+        <div class="links">
+          <a href="https://splitexpenses.herokuapp.com/" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <a href="https://github.com/emmajphillips/sei-group-project-3" target="_blank"
+            rel="noopener noreferrer">Go to the ReadMe</a>
+        </div>
+      </article>
+      <article class="project">
+        <h3>JOBR: Job application tracker</h3>
+        <img src="./assets/jobr.png" alt="Job application tracker" />
+        <p>
+          Project utilising React, Django, Python and Semantic UI to create a job application tracker, implementing a
+          kanban board through HTML5 Drag and Drop along with tasks, resources and contacts pages to better
+          organise the job search
+        </p>
+        <div class="links">
+          <a href="https://jobeur.herokuapp.com/jobs" target="_blank" rel="noopener noreferrer">Visit website</a>
+          <a href="https://github.com/emmajphillips/sei-project-4" target="_blank" rel="noopener noreferrer">Go to the ReadMe</a>
+        </div>
+      </article>
     </section>
     <section id="contact" class="contact section">
       <h2 class="heading">Contact</h2>
-      <p>Email: <a href="mailto:emmjphillips@gmail.com" target="_blank"
-          rel="noopener noreferrer">emmjphillips@gmail.com</a></p>
-      <p>Github: <a href="https://www.github.com/emmajphillips" target="_blank"
-          rel="noopener noreferrer">github.com/emmajphillips</a></p>
+      <p>Email:
+        <a href="mailto:emmjphillips@gmail.com" target="_blank" rel="noopener noreferrer">emmjphillips@gmail.com</a>
+      </p>
+      <p>Github:
+        <a href="https://www.github.com/emmajphillips" target="_blank"
+          rel="noopener noreferrer">github.com/emmajphillips</a>
+      </p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/emma-phillips-055a8b89/" target="_blank"
           rel="noopener noreferrer">linkedin.com/emmaphillips</a></p>
     </section>

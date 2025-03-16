@@ -26,9 +26,6 @@ function init() {
       readme: 'https://github.com/emmajphillips/sei-project-4'
     }
   ]
-
-  console.log('It works')
-  
 }
 
 window.addEventListener('DOMContentLoaded', init)
