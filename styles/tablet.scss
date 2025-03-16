@@ -15,23 +15,25 @@
     padding: 1rem;
     p {
       max-width: 25em;
-      margin: 0 0 0 auto;
     }
   }
+
   // * Projects section
-  article.project > div.content {
-    flex-wrap: nowrap;
-    width: 48%;
-    margin-left: 1.5rem;
-    padding: 0.5em;
-    p {
-      margin: 10px 0;
+  section.projects > div.projects-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    article.project > div.content {
+      flex-wrap: nowrap;
+      width: 48%;
+      margin-left: 1.5rem;
+      padding: 0.5em;
+      p {
+        margin: 10px 0;
+      }
     }
   }
-  
+
   article:nth-child(4) {
     margin-bottom: 2em;
   }
-
-
 }

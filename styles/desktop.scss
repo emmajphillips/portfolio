@@ -16,21 +16,6 @@
     height: calc(100vh - 43px);
     h1 {
       max-width: 25rem;
-      margin: 0 auto 1rem 8%;
-    }
-  }
-  // * All sections
-  section.about,
-  section.contact {
-    .heading {
-      margin: 2rem 8% 1rem auto;
-    }
-    p {
-      margin: 0 8% 0 auto;
-      font-size: 1.25em;
-      &:last-child {
-        margin-bottom: 1rem;
-      }
     }
   }
 
@@ -46,10 +31,7 @@
   }
 
   // * Projects section
-  section.projects {
-    margin: 0 auto 0 8%;
-    article.project {
-      justify-content: flex-start;
-    }
+  article.project {
+    justify-content: flex-start;
   }
 }

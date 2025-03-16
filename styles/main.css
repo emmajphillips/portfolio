@@ -4,7 +4,7 @@
   font-family: "Helvetica", sans-serif;
   font-weight: 400;
   text-decoration: none;
-  background-color: #daedfd;
+  background-color: #fafac7;
 }
 
 a {
@@ -19,96 +19,104 @@ strong {
 }
 
 nav {
-  font-size: 20px;
   border-bottom: 1px solid #000;
+  font-size: 20px;
+  padding: 0.5rem;
 }
 nav ul {
   display: flex;
   justify-content: flex-end;
+  gap: 1em;
 }
 nav ul li {
-  margin: 0.5em;
   list-style: none;
+}
+nav ul li:nth-child(1):after,
+nav ul li:nth-child(2):after {
+  content: "//";
+  padding-left: 1em;
 }
 
 div.hero {
-  height: calc(100vh - 43px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 50vh;
   text-transform: uppercase;
-  text-align: bottom;
   font-size: 2em;
-  padding: 0.5em 0.5em 0;
+  padding: 0.5em;
   border-bottom: 1px solid #000;
-}
-div.hero h1:first-child {
-  margin-top: 60vh;
-  max-width: 7em;
 }
 
 section.section {
-  min-height: calc(100vh - 43px);
-  height: 100%;
-  padding: 1rem 0.75rem;
   border-bottom: 1px solid #000;
   font-size: 18px;
+  padding: 1rem;
 }
-section.section .heading {
-  font-size: 1.75em;
-  margin: 2rem 0 1rem;
-  padding-left: 0.25em;
-  letter-spacing: 3px;
+section.section h2 {
+  font-size: 2em;
 }
 
-section.about,
-section.contact {
-  text-align: right;
-  padding-left: 2.5rem;
+section.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
 }
-
-section.about > p:nth-child(2) {
-  padding-bottom: 1rem;
+section.about h3 {
+  font-size: 1.5em;
+  margin-bottom: 8px;
 }
-
-section.about > h2:nth-child(8) {
-  margin-top: 4rem;
+section.about p {
+  padding-bottom: 4px;
 }
-
-div.technologies {
+section.about span.bold {
+  font-weight: bold;
+}
+section.about span.bold::after {
+  content: " -";
+}
+section.about div.skills-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  max-width: 25em;
-  margin: 0 0 0 auto;
+  gap: 24px 26px;
+  justify-content: space-between;
+  padding: 1em;
 }
-div.technologies div.tech-skill {
+section.about div.skills-wrapper div.tech-skill {
   text-align: center;
-  width: 27%;
-  margin: 20px 0 10px 20px;
 }
-div.technologies div.tech-skill i {
+section.about div.skills-wrapper div.tech-skill i {
   font-size: 2.5em;
 }
-div.technologies div.tech-skill p {
+section.about div.skills-wrapper div.tech-skill p {
   margin-top: 8px;
 }
 
-article.project {
+section.projects {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
 }
-article.project img {
-  margin-top: 1em;
+section.projects div.projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+section.projects div.projects-wrapper article.project {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+section.projects div.projects-wrapper article.project img {
   border: 1px solid #000;
 }
-article.project div.content {
-  width: 95%;
+section.projects div.projects-wrapper article.project div.links {
+  display: flex;
 }
-article.project div.content h3, article.project div.content p {
-  margin: 0.5em 0;
-}
-article.project div.content a:nth-child(4)::before {
-  content: "//     ";
+section.projects div.projects-wrapper article.project div.links a:nth-child(2)::before {
+  content: "//";
+  padding: 0 0.25em;
 }
 
 section.contact {
@@ -119,29 +127,28 @@ section.contact {
   nav ul {
     margin-right: 0.5em;
   }
-
   div.hero {
     padding: 1rem;
   }
-
   section.section {
     padding: 1rem;
   }
   section.section p {
     max-width: 25em;
-    margin: 0 0 0 auto;
   }
-
-  article.project > div.content {
+  section.projects > div.projects-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  section.projects > div.projects-wrapper article.project > div.content {
     flex-wrap: nowrap;
     width: 48%;
     margin-left: 1.5rem;
     padding: 0.5em;
   }
-  article.project > div.content p {
+  section.projects > div.projects-wrapper article.project > div.content p {
     margin: 10px 0;
   }
-
   article:nth-child(4) {
     margin-bottom: 2em;
   }
@@ -150,35 +157,17 @@ section.contact {
   html {
     font-size: 20px;
   }
-
   nav > ul {
     max-width: 25em;
     position: relative;
     left: calc(100% - (25em + 8% - 20px));
   }
-
   div.hero {
     height: calc(100vh - 43px);
   }
   div.hero h1 {
     max-width: 25rem;
-    margin: 0 auto 1rem 8%;
   }
-
-  section.about .heading,
-section.contact .heading {
-    margin: 2rem 8% 1rem auto;
-  }
-  section.about p,
-section.contact p {
-    margin: 0 8% 0 auto;
-    font-size: 1.25em;
-  }
-  section.about p:last-child,
-section.contact p:last-child {
-    margin-bottom: 1rem;
-  }
-
   div.technologies {
     margin: 0 7% 0 auto;
     max-width: 80%;
@@ -189,11 +178,7 @@ section.contact p:last-child {
   div.technologies p {
     margin: 0;
   }
-
-  section.projects {
-    margin: 0 auto 0 8%;
-  }
-  section.projects article.project {
+  article.project {
     justify-content: flex-start;
   }
 }
